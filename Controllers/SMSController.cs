@@ -46,8 +46,8 @@ namespace SMSAPI.Controllers
             try
             {
                 request.PreAuthenticate = true;
-                String username = "abb40ca70b0d4726";// "06c76e11ca598786";
-                String password = "MmM5MThiYTNiOGJiZjhhOTk3NzFiNmE5MzBlMjk2NWQ5Njk1MjIzZmViZmU2YWEyZjZjMDM2ODk3YWY2M2E2OQ==";// "ZTM4ZDRkYzk3NjZkMjdjMGNhNmRhMmE4NmU3NGE3OGNkN2I0ZGNjY2MzNGU3MmI5ZmJiNmVjMDcxOGQxZDI2MA ==";
+                String username = "<USER_NAME>";
+                String password = "<USER_PASSWORD>";
                 String encoded = System.Convert.ToBase64String(System.Text.Encoding.GetEncoding("ISO-8859-1").GetBytes(username + ":" + password));
                 request.Headers.Add("Authorization", "Basic " + encoded);
 
